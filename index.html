@@ -15,8 +15,28 @@
 </body>
 
 <script type="text/babel">
+	//const name =  "Mouhamed ghassen kahlaoui ";
+	//const el1 = <p className='test'> Hello  {name}</p> ; 
 	
-	const el1 = <p> Hello React </p> ; 
-		ReactDOM.render(el1,document.getElementById("app")); 
+/*	const el3 = (
+
+	<p> Bonjour <span> DSI21 </span> </p>
+	);*/
+		const el2 = React.createElement(
+			'p' , 
+			{className : 'test'} , 
+			React.createElement(
+				'span' , 
+				null , 
+				'DSI21'
+			), 
+			React.createElement(
+				'i',
+			null,
+			'ADMIS'
+
+)
+		);
+		ReactDOM.render(el2,document.getElementById("app")); 
 </script>
 </html>
